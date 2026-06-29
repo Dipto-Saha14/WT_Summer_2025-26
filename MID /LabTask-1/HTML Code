@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ElectroMart - Product Catalogue</title>
+
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Electronic products catalogue">
+</head>
+
+<body>
+
+    <header>
+        <h1>ElectroMart</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <fieldset>
+            <legend>Available Products</legend>
+
+            <table border="1">
+
+                <caption>
+                    <h2>ElectroMart Product Catalogue</h2>
+                </caption>
+
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Phone"></td>
+                    <td><b>Smartphone Pro X</b></td>
+                    <td>6.5 inch display, 128GB storage, 5000mAh battery</td>
+                    <td>$499</td>
+                    <td><a href="#">Buy Now</a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Laptop"></td>
+                    <td><b>Laptop Ultra</b></td>
+                    <td>Core i7 processor, 16GB RAM, 512GB SSD</td>
+                    <td>$899</td>
+                    <td><a href="#">Buy Now</a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Watch"></td>
+                    <td><b>Smart Watch</b></td>
+                    <td>Heart rate monitor, GPS, water resistant</td>
+                    <td>$199</td>
+                    <td><a href="#">Buy Now</a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Speaker"></td>
+                    <td><b>Bluetooth Speaker</b></td>
+                    <td>Wireless speaker with long battery life</td>
+                    <td>$79</td>
+                    <td><a href="#">Buy Now</a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Tablet"></td>
+                    <td><b>Tablet Max</b></td>
+                    <td>10 inch display, 64GB storage, fast performance</td>
+                    <td>$349</td>
+                    <td><a href="#">Buy Now</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">
+                        <center><b>Total Products: 5</b></center>
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Copyright © 2026 ElectroMart</p>
+        <p>Email: electromart@gmail.com</p>
+    </footer>
+
+</body>
+</html>
