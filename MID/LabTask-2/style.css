@@ -1,0 +1,67 @@
+body{
+    font-family: Arial;
+}
+
+header{
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+nav{
+    background-color: yellow;
+    padding: 10px;
+}
+
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:hover{
+    color: red;
+}
+
+main{
+    padding: 15px;
+}
+
+form{
+    width: 300px;
+    margin: auto;
+    border: 2px solid green;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+label{
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+input[type="submit"]{
+    background-color: orange;
+    color: black;
+}
+
+input[type="submit"]:hover{
+    background-color: purple;
+    color: white;
+}
+
+footer{
+    background-color: lime;
+    text-align: center;
+    padding: 10px;
+}
