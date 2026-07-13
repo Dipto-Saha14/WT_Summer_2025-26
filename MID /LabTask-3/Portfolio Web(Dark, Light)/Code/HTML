@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<center>
+    <h1>My Portfolio</h1>
+    <h3 id="greeting"></h3>
+
+    <button id="themeButton" onclick="changeTheme()">Switch to Dark Mode</button>
+</center>
+
+<hr>
+
+<h2>Home</h2>
+<p>Welcome to my portfolio website.</p>
+
+<hr>
+
+<h2>About Me</h2>
+<p>
+My name is Dipto.<br>
+</p>
+
+<hr>
+
+<h2>Skills</h2>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>C++</li>
+</ul>
+
+<hr>
+
+<h2>Contact</h2>
+
+<p>Email: krishan9@gmail.com</p>
+<p>Phone: 01923456789</p>
+
+<script>
+
+var dark = false;
+
+function changeTheme()
+{
+    var button = document.getElementById("themeButton");
+
+    if(dark == false)
+    {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+
+        button.innerHTML = "Switch to Light Mode";
+
+        dark = true;
+    }
+    else
+    {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+
+        button.innerHTML = "Switch to Dark Mode";
+
+        dark = false;
+    }
+}
+
+var hour = new Date().getHours();
+
+if(hour < 12)
+{
+    document.getElementById("greeting").innerHTML = "Good Morning";
+}
+else if(hour < 18)
+{
+    document.getElementById("greeting").innerHTML = "Good Afternoon";
+}
+else
+{
+    document.getElementById("greeting").innerHTML = "Good Evening";
+}
+
+</script>
+
+</body>
+
+</html>
