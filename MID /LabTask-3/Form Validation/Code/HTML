@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<center>
+    <h2>Contact Form</h2>
+</center>
+
+<form onsubmit="return handleSubmit()">
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email"><br><br>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone"><br><br>
+
+    <label>Password:</label>
+    <input type="password" id="password"><br><br>
+
+    <label>Age:</label>
+    <input type="text" id="age"><br><br>
+
+    <label>Message:</label><br>
+    <textarea id="message" rows="4" cols="30"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+
+function handleSubmit()
+{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var password = document.getElementById("password").value;
+    var age = document.getElementById("age").value;
+    var message = document.getElementById("message").value;
+
+    if(name=="" || email=="" || phone=="" || password=="" || age=="" || message=="")
+    {
+        alert("Please fill all the fields.");
+        return false;
+    }
+
+    if(!/^[A-Za-z ]+$/.test(name) || name.length<3)
+    {
+        alert("Name must contain only letters and be at least 3 characters.");
+        return false;
+    }
+
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+{
+    alert("Enter a valid email address.");
+    return false;
+}
+    if(phone.length!=10 || isNaN(phone))
+    {
+        alert("Phone number must be exactly 10 digits.");
+        return false;
+    }
+
+    if(password.length < 8)
+{
+    alert("Password must be at least 8 characters.");
+    return false;
+}
+
+if(password.search(/[A-Z]/) == -1)
+{
+    alert("Password must contain at least one uppercase letter.");
+    return false;
+}
+
+if(password.search(/[a-z]/) == -1)
+{
+    alert("Password must contain at least one lowercase letter.");
+    return false;
+}
+
+if(password.search(/[0-9]/) == -1)
+{
+    alert("Password must contain at least one number.");
+    return false;
+}
+
+if(password.search(/[!@#$%^&*(),.?":{}|<>]/) == -1)
+{
+    alert("Password must contain at least one special character.");
+    return false;
+}
+
+    if(isNaN(age) || age<18)
+    {
+        alert("Age must be 18 or above.");
+        return false;
+    }
+
+    if(message.length<10)
+    {
+        alert("Message must be at least 10 characters.");
+        return false;
+    }
+
+    alert(
+        "Registration Successful!\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Age: " + age + "\n" +
+        "Message: " + message + "\n\n" +
+        "Thank you for registering successfully."
+    );
+
+    return false;
+}
+
+</script>
+
+</body>
+
+</html>
