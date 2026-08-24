@@ -101,14 +101,14 @@ require_once "config.php";
                 echo "<td>" . $row['dob'] . "</td>";
                 echo "<td>" . $row['role'] . "</td>";
                 echo "<td>
-                        <!-- Inline Form for Update -->
+                        
                         <form action='process.php' method='POST' style='display:inline;'>
                             <input type='hidden' name='user_id' value='" . $row['id'] . "'>
                             <input type='text' name='fullname' value='" . $row['fullname'] . "' required>
                             <input type='email' name='email' value='" . $row['email'] . "' required>
                             <button type='submit' name='update_user'>Update</button>
                         </form>
-                        <!-- Inline Form for Delete -->
+                      
                         <form action='process.php' method='POST' style='display:inline;'>
                             <input type='hidden' name='user_id' value='" . $row['id'] . "'>
                             <button type='submit' name='delete_user'>Delete</button>
